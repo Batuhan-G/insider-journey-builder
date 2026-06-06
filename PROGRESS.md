@@ -11,11 +11,14 @@
 - [x] src/core/mocks/handlers.ts
 - [x] src/core/mocks/browser.ts
 - [x] src/assets/main.css
+- [x] vitest.config.ts
+- [x] .env.example
 
 ## Sıradaki Adımlar
 
-- [ ] ADIM 1: PROGRESS.md + Husky ← ŞU AN
-- [ ] ADIM 2: vitest.config.ts + .env.example
+- [x] ADIM 1: PROGRESS.md + Husky
+- [x] ADIM 2: vitest.config.ts + .env.example
+- [x] ADIM 3: src/core/monitoring/ (Sentry) + main.ts + App.vue
 - [ ] ADIM 3: src/core/monitoring/ (Sentry) + main.ts + App.vue
 - [ ] ADIM 4: src/core/api/httpClient.ts + journeyRepository.ts
 - [ ] ADIM 4b: JourneyBuilderView.vue — fetch() ihlalini düzelt
