@@ -1,0 +1,59 @@
+# Insider One Case Study — Marketing Journey Builder
+
+> This file follows the llms.txt standard (https://llmstxt.org) to provide AI assistants with structured, reliable context about this project.
+
+## Project
+
+A production-grade **Marketing Automation Journey Builder** built as a case study for Insider One's frontend developer position. The application simulates Insider One's core product: a visual, cross-channel customer journey orchestration platform.
+
+## Purpose
+
+Allow marketing teams to design automated customer journeys using a node-based canvas:
+- **Triggers**: Events that start a journey (user signs up, adds to cart, visits page)
+- **Conditions**: Branching logic (has mobile app?, cart value > 1000 TL?)  
+- **Actions**: Cross-channel communications (WhatsApp, SMS, Email, Push)
+- **Wait nodes**: Time delays between steps
+- **Split nodes**: A/B testing branches
+
+## Tech Stack
+
+- Vue 3 + TypeScript (Strict) + Vite + pnpm
+- Pinia (state management, Setup Store syntax only)
+- Vue Router (lazy-loaded routes)
+- Tailwind CSS (utility-first, no inline styles)
+- MSW (Mock Service Worker for API simulation)
+- VueUse (composables library)
+- Vitest + @vue/test-utils (unit + component tests)
+- Playwright (E2E tests)
+- Storybook (component documentation)
+- Sentry (error monitoring)
+- GitHub Actions + AWS Amplify (CI/CD)
+
+## Architecture
+
+Feature-driven modular architecture. Each feature owns its components, store, types, composables, and tests. Shared UI lives in `src/components/base/` with `Ins` prefix naming.
+
+## Key Files
+
+- `CLAUDE.md` — Full developer guide and architecture decisions
+- `.cursorrules` — AI assistant rules (Cursor)
+- `.cursor/rules/` — Granular Cursor rule files per concern
+- `.skills/` — Task-specific AI skill guides
+- `src/types/journey.ts` — Core domain type definitions
+- `src/core/mocks/handlers.ts` — MSW API mock handlers
+- `src/features/journey/` — Main feature module
+
+## Coding Standards
+
+- Zero `any` in TypeScript
+- `<script setup>` syntax only (no Options API)
+- Props typed with `defineProps<Interface>()` generic syntax
+- Stores use Setup Store syntax (`defineStore('id', () => { ... })`)
+- All async actions have `isLoading`, `error`, `try/catch/finally`
+- Every component has a co-located `.test.ts` file
+- Every base component has a `.stories.ts` Storybook file
+
+## Optional
+
+- `docs/` — Architecture decisions and AI collaboration log
+- `.env.example` — Required environment variables
