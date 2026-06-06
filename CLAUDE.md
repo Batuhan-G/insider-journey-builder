@@ -1,6 +1,6 @@
 # CLAUDE.md — Insider One Case Study: Marketing Journey Builder
 
-> This file is the single source of truth for any AI assistant (Claude, Cursor, Copilot) working on this codebase. Read it fully before generating any code.
+> This file is the single source of truth for any AI assistant (Claude, Copilot) working on this codebase. Read it fully before generating any code.
 
 ---
 
@@ -93,7 +93,6 @@ Every feature is a self-contained module under `src/features/`. A feature owns i
 ## Folder Structure
 
 ```
-├── .cursor/rules/          # Cursor AI rule files (per concern)
 ├── .github/workflows/      # CI/CD pipeline
 ├── .skills/                # AI skill guides for specific tasks
 ├── .husky/                 # Git hooks (lint + typecheck on commit)

@@ -18,7 +18,6 @@ The goal was to demonstrate what a developer who deeply understands AI tooling c
 |---|---|
 | Claude (claude.ai) | Architecture planning, code review, documentation |
 | Claude Code | Terminal-based implementation, file generation, refactoring |
-| Cursor | In-editor AI completion with project-aware context |
 | MSW | Realistic API simulation without a backend |
 
 ---
@@ -85,13 +84,12 @@ The %30 → %80+ coverage improvement at Rapsodo used a similar methodology — 
 | Mock data approach | Separate Express server | MSW (Mock Service Worker) | Industry standard, works in both dev and test environments |
 | State management | Vuex | Pinia | Vue 3 official recommendation |
 | E2E testing | Cypress | Playwright | Better parallelism, modern API, faster CI |
-| Cursor rules format | Single `.cursorrules` file | `.cursor/rules/*.mdc` per concern | Cursor v2 supports granular rules — more maintainable |
 
 ---
 
 ## Lessons Learned
 
-1. **Context is everything.** AI with access to `CLAUDE.md`, `.cursorrules`, and `.skills/` files produces significantly better code than AI with no context.
+1. **Context is everything.** AI with access to `CLAUDE.md` and `.skills/` files produces significantly better code than AI with no context.
 
 2. **Skill files are reusable across projects.** The patterns established here can be adapted for any Vue 3 project.
 
