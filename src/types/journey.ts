@@ -1,9 +1,3 @@
-// src/types/journey.ts
-// Core TypeScript definitions for the Marketing Journey Builder
-// These types model the domain of Insider One's automation platform
-
-// ─── Node Types ────────────────────────────────────────────────────────────
-
 export type NodeType = 'trigger' | 'condition' | 'action' | 'wait' | 'split'
 
 export type TriggerEvent =
@@ -28,8 +22,6 @@ export interface NodePosition {
   x: number
   y: number
 }
-
-// ─── Node Configs (discriminated union by type) ────────────────────────────
 
 export interface TriggerConfig {
   event: TriggerEvent
@@ -65,8 +57,6 @@ export type NodeConfig =
   | WaitConfig
   | SplitConfig
 
-// ─── Journey Node ──────────────────────────────────────────────────────────
-
 export interface JourneyNode {
   id: string
   type: NodeType
@@ -77,8 +67,6 @@ export interface JourneyNode {
   validationErrors?: string[]
 }
 
-// ─── Journey Edge ──────────────────────────────────────────────────────────
-
 export interface JourneyEdge {
   id: string
   sourceId: string
@@ -86,8 +74,6 @@ export interface JourneyEdge {
   label?: string
   condition?: string
 }
-
-// ─── Journey ───────────────────────────────────────────────────────────────
 
 export type JourneyStatus = 'draft' | 'active' | 'paused' | 'archived'
 
@@ -104,8 +90,6 @@ export interface Journey {
   createdBy?: string
 }
 
-// ─── Validation ────────────────────────────────────────────────────────────
-
 export interface ValidationError {
   nodeId?: string
   message: string
@@ -117,8 +101,6 @@ export interface ValidationResult {
   errors: string[]
   warnings?: string[]
 }
-
-// ─── API Responses ─────────────────────────────────────────────────────────
 
 export interface PaginatedResponse<T> {
   data: T[]
@@ -133,8 +115,6 @@ export interface ApiError {
   message: string
   details?: Record<string, string[]>
 }
-
-// ─── Analytics (for dashboard view) ───────────────────────────────────────
 
 export interface JourneyMetrics {
   journeyId: string
