@@ -21,7 +21,7 @@
 - [x] ADIM 2: vitest.config.ts + .env.example
 - [x] ADIM 3: src/core/monitoring/ (Sentry) + main.ts + App.vue
 - [x] ADIM 4: src/core/api/httpClient.ts + journeyRepository.ts
-- [ ] ADIM 4b: JourneyBuilderView.vue — fetch() ihlalini düzelt
+- [x] ADIM 4b: JourneyBuilderView.vue — fetch() ihlali düzeltildi + store refactor
 - [ ] ADIM 5a: InsButton + test + story
 - [ ] ADIM 5b: InsInput + test + story
 - [ ] ADIM 5c: InsBadge + test + story

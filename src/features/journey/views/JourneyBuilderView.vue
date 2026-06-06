@@ -5,16 +5,7 @@ import { useJourneyStore } from '../store/useJourneyStore'
 const journeyStore = useJourneyStore()
 
 onMounted(async () => {
-  journeyStore.setLoading(true)
-  try {
-    const response = await fetch('/api/journeys')
-    const data = await response.json()
-    journeyStore.setJourneys(data)
-  } catch {
-    journeyStore.setError('Failed to load journeys')
-  } finally {
-    journeyStore.setLoading(false)
-  }
+  await journeyStore.fetchJourneys()
 })
 </script>
 
