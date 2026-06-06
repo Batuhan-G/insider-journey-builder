@@ -162,3 +162,20 @@ See `docs/ai-collaboration.md` for a detailed log of how AI tools were used thro
 
 - No code comments. Code must be self-documenting through clear naming.
 - Exception: genuinely non-obvious business logic only.
+
+## Commit Strategy
+
+- Commit after every small completed unit of work — a bug fix, a new
+  feature, a test, a config change, a refactor. Do not batch unrelated
+  changes into a single commit.
+- Always follow Conventional Commits format:
+  - `feat:` new feature or component
+  - `fix:` bug fix
+  - `test:` adding or updating tests
+  - `docs:` documentation changes
+  - `chore:` config, dependencies, tooling
+  - `refactor:` code restructure without behavior change
+- Before committing, always run `pnpm typecheck && pnpm lint`
+- Commit messages are validated by Husky — do not bypass hooks
+- NEVER run `git push` automatically. Always stage and commit the work,
+  then stop and ask the user for approval before pushing.
