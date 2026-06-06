@@ -13,13 +13,14 @@
 - [x] src/assets/main.css
 - [x] vitest.config.ts
 - [x] .env.example
+- [x] src/core/api/client.ts — httpClient (zaten mevcuttu)
 
 ## Sıradaki Adımlar
 
 - [x] ADIM 1: PROGRESS.md + Husky
 - [x] ADIM 2: vitest.config.ts + .env.example
 - [x] ADIM 3: src/core/monitoring/ (Sentry) + main.ts + App.vue
-- [ ] ADIM 4: src/core/api/httpClient.ts + journeyRepository.ts
+- [x] ADIM 4: src/core/api/httpClient.ts + journeyRepository.ts
 - [ ] ADIM 4b: JourneyBuilderView.vue — fetch() ihlalini düzelt
 - [ ] ADIM 5a: InsButton + test + story
 - [ ] ADIM 5b: InsInput + test + story
