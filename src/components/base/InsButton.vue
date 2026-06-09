@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import InsSpinner from './InsSpinner.vue'
+
 interface Props {
   variant?: 'primary' | 'secondary' | 'danger' | 'ghost'
   size?: 'sm' | 'md' | 'lg'
@@ -41,20 +43,7 @@ defineEmits<{
     ]"
     @click="$emit('click', $event)"
   >
-    <svg
-      v-if="loading"
-      class="animate-spin -ml-1 mr-2 h-4 w-4"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-    >
-      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
-      <path
-        class="opacity-75"
-        fill="currentColor"
-        d="M4 12a8 8 0 018-8V0C5.373 0 3 0 5.373 0 12H4z"
-      />
-    </svg>
+    <InsSpinner v-if="loading" class="-ml-1 mr-2" />
     <slot />
   </button>
 </template>
