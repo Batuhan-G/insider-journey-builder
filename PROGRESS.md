@@ -1,39 +1,39 @@
 # Project Progress
 
-## Tamamlananlar
+## Completed
 
-- [x] package.json — bağımlılıklar
-- [x] src/types/journey.ts — domain tipleri
+- [x] package.json — dependencies
+- [x] src/types/journey.ts — domain types
 - [x] src/features/journey/types/journey.types.ts
-- [x] src/features/journey/store/useJourneyStore.ts (kısmi)
-- [x] src/features/journey/views/JourneyBuilderView.vue (mimari ihlal var)
+- [x] src/features/journey/store/useJourneyStore.ts (partial)
+- [x] src/features/journey/views/JourneyBuilderView.vue (architecture violation fixed)
 - [x] src/router/index.ts
 - [x] src/core/mocks/handlers.ts
 - [x] src/core/mocks/browser.ts
 - [x] src/assets/main.css
 - [x] vitest.config.ts
 - [x] .env.example
-- [x] src/core/api/client.ts — httpClient (zaten mevcuttu)
+- [x] src/core/api/client.ts — httpClient
 
-## Sıradaki Adımlar
+## Steps
 
-- [x] ADIM 1: PROGRESS.md + Husky
-- [x] ADIM 2: vitest.config.ts + .env.example
-- [x] ADIM 3: src/core/monitoring/ (Sentry) + main.ts + App.vue
-- [x] ADIM 4: src/core/api/httpClient.ts + journeyRepository.ts
-- [x] ADIM 4b: JourneyBuilderView.vue — fetch() ihlali düzeltildi + store refactor
-- [ ] ADIM 5a: InsButton + test + story
-- [ ] ADIM 5b: InsInput + test + story
-- [ ] ADIM 5c: InsBadge + test + story
-- [ ] ADIM 5d: InsCard + test + story
-- [ ] ADIM 6: AppHeader + AppSidebar + AppLayout
-- [ ] ADIM 7: EmptyState + LoadingSpinner + DataTable + testler
-- [ ] ADIM 8: useDebounce + useBreakpoint + useToast + testler
-- [ ] ADIM 9: useAuthStore + useUiStore + testler
-- [ ] ADIM 10: GitHub Actions CI pipeline
-- [ ] ADIM 11: JourneyCanvas + NodeCard + EdgeConnector + testler
-- [ ] ADIM 12: useJourneyDrag + useJourneyValidation + testler
-- [ ] ADIM 13: Store güncellemeleri (updateNode, connectNodes, selectNode, fetchJourneys)
-- [ ] ADIM 14: Playwright E2E testler
-- [ ] ADIM 15: Analytics feature
-- [ ] ADIM 16: AWS Amplify deploy
+- [x] STEP 1: PROGRESS.md + Husky
+- [x] STEP 2: vitest.config.ts + .env.example
+- [x] STEP 3: src/core/monitoring/ (Sentry) + main.ts + App.vue
+- [x] STEP 4: src/core/api/httpClient.ts + journeyRepository.ts
+- [x] STEP 4b: JourneyBuilderView.vue — removed direct fetch() + store refactor
+- [x] STEP 5a: InsButton + test + story
+- [x] STEP 5b: InsInput + test + story
+- [x] STEP 5c: InsBadge + test + story
+- [x] STEP 5d: InsCard + test + story
+- [ ] STEP 6: AppHeader + AppSidebar + AppLayout
+- [ ] STEP 7: EmptyState + LoadingSpinner + DataTable + tests
+- [ ] STEP 8: useDebounce + useBreakpoint + useToast + tests
+- [ ] STEP 9: useAuthStore + useUiStore + tests
+- [ ] STEP 10: GitHub Actions CI pipeline
+- [ ] STEP 11: JourneyCanvas + NodeCard + EdgeConnector + tests
+- [ ] STEP 12: useJourneyDrag + useJourneyValidation + tests
+- [ ] STEP 13: Store updates (updateNode, connectNodes, selectNode, fetchJourneys)
+- [ ] STEP 14: Playwright E2E tests
+- [ ] STEP 15: Analytics feature
+- [ ] STEP 16: AWS Amplify deploy
