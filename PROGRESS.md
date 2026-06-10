@@ -26,7 +26,7 @@
 - [x] STEP 5b: InsInput + test + story
 - [x] STEP 5c: InsBadge + test + story
 - [x] STEP 5d: InsCard + test + story
-- [ ] STEP 6: AppHeader + AppSidebar + AppLayout
+- [x] STEP 6: AppHeader + AppSidebar + AppLayout
 - [ ] STEP 7: EmptyState + LoadingSpinner + DataTable + tests
 - [ ] STEP 8: useDebounce + useBreakpoint + useToast + tests
 - [ ] STEP 9: useAuthStore + useUiStore + tests
