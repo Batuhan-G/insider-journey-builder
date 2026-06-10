@@ -1,4 +1,4 @@
-import { http, HttpResponse } from 'msw'
+import { http, HttpResponse, passthrough } from 'msw'
 import type { Journey } from '@/types/journey'
 
 const mockJourneys: Journey[] = [
@@ -25,6 +25,8 @@ const mockJourneys: Journey[] = [
 ]
 
 export const handlers = [
+  http.all('https://*.sentry.io/*', () => passthrough()),
+
   http.get('/api/journeys', () => {
     return HttpResponse.json(mockJourneys)
   }),
