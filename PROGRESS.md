@@ -27,10 +27,10 @@
 - [x] STEP 5c: InsBadge + test + story
 - [x] STEP 5d: InsCard + test + story
 - [x] STEP 6: AppHeader + AppSidebar + AppLayout
-- [ ] STEP 7: EmptyState + LoadingSpinner + DataTable + tests
-- [ ] STEP 8: useDebounce + useBreakpoint + useToast + tests
-- [ ] STEP 9: useAuthStore + useUiStore + tests
-- [ ] STEP 10: GitHub Actions CI pipeline
+- [x] STEP 7: EmptyState + LoadingSpinner + DataTable + tests
+- [x] STEP 8: useDebounce + useBreakpoint + useToast + tests
+- [x] STEP 9: useAuthStore + useUiStore + tests
+- [x] STEP 10: GitHub Actions CI pipeline
 - [ ] STEP 11: JourneyCanvas + NodeCard + EdgeConnector + tests
 - [ ] STEP 12: useJourneyDrag + useJourneyValidation + tests
 - [ ] STEP 13: Store updates (updateNode, connectNodes, selectNode, fetchJourneys)
